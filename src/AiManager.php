@@ -15,7 +15,7 @@ use Illuminate\Support\Arr;
 
 class AiManager
 {
-    
+
     protected $app;
     protected $factory;
     protected $drivers;
@@ -27,7 +27,11 @@ class AiManager
     }
 
 
-    public function driver($name)
+    /**
+     * @param string $name
+     * @return mixed
+     */
+    public function driver($name = '')
     {
         $name = $name ?: $this->getDefaultDriver();
 
@@ -41,12 +45,20 @@ class AiManager
     }
 
 
+    /**
+     * @return mixed
+     */
     protected function getDefaultDriver()
     {
         return $this->app['config']['ai.default'];
     }
 
 
+    /**
+     * @param $name
+     * @param $config
+     * @return mixed
+     */
     protected function makeDriver($name, $config)
     {
         return $this->factory->make($name, $config);
