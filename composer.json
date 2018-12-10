@@ -1,0 +1,25 @@
+{
+    "name": "crisen/laravel-ai",
+    "description": "优雅的laravel ai客户端",
+    "require": {
+        "laravel/framework": "5.4",
+        "crisen/ai": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "crisenchou",
+            "email": "crisen@crisen.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Crisen\\LaravelAi\\": "src/",
+            "Crisen\\LaravelAi\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev"
+}
