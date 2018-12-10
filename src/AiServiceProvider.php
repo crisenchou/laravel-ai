@@ -21,7 +21,7 @@ class AiServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/config/laravel-ai.php' => config_path('ai.php'),
+            dirname(__DIR__) . '/config/laravel-ai.php' => config_path('ai.php'),
         ]);
     }
 
@@ -29,7 +29,7 @@ class AiServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/config/laravel-ai.php', 'ai'
+            dirname(__DIR__) . '/config/laravel-ai.php', 'ai'
         );
 
 
