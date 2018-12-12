@@ -1,6 +1,12 @@
 {
     "name": "crisen/laravel-ai",
     "description": "优雅的laravel ai客户端",
+    "keywords": [
+        "人脸识别",
+        "人脸库",
+        "ai client",
+        "laravel ai"
+    ],
     "require": {
         "laravel/framework": "^5.4",
         "crisen/ai": "dev-master"
