@@ -42,7 +42,7 @@ class SomeController{
 
 ## 更多使用方法
 
-- [详细文档](ai.crisen.org)
+- [详细文档](http://ai.crisen.org)
 
 
 
