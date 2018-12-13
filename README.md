@@ -29,11 +29,11 @@ use Crisen\LaravelAi\Facades\Ai;
 class SomeController{
 
 	public function facesetAdd(){
-		//人脸注册
-		$res = AI::gateway('faceset.user')
-			->url("jttp://domaon.com/someimgae.jpeg")
-            ->add();
-        dd($res);
+		//人脸检索
+		$res = Ai::face()
+		        ->url("jttp://domaon.com/someimgae.jpeg")
+		        ->detect();
+		 dd($res);
 	}
 }
 ~~~
