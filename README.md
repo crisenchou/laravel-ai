@@ -9,10 +9,51 @@ composer require "crisen/laravel-ai":"dev-master"
 
 
 
+### 注册服务提供者
+
+app.php中
+
+~~~
+
+'providers' => [
+    
+    .....
+    
+    Crisen\LaravelAi\AiServiceProvider::class,
+    
+];
+
+'aliases' => [
+    
+    ....
+    'Ai' => Crisen\LaravelAi\Facades\Ai::class,
+]
+~~~
+
 ## 发布资源
 
 ~~~
 artisan vendor:publish --provider=Crisen\LaravelAi\AiServiceProvider
+~~~
+
+### 配置
+
+ai.php
+
+~~~
+return [
+    
+    'default' => 'baidu',
+
+
+    'drivers' => [
+        'baidu' => [
+            'app_id' => '15027866', // 百度appid
+            'api_key' => 'yGjoCu5KGIssc9l0lbSI25FO', // 百度apikey
+            'secret_key' => 'ZPOnxKD9hQ74qPl2rmyp4aBlxEf6lwaB' // 百度secret key
+        ],
+    ]
+];
 ~~~
 
 
@@ -57,8 +98,4 @@ class SomeController{
 ## LICENSE
 
 [MIT](LICENSE)
-
-## 
-
-
 
