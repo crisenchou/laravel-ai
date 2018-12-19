@@ -7,7 +7,7 @@
 composer require "crisen/laravel-ai":"dev-master"
 ~~~
 
-非laravel版本,(点击这里)[https://github.com/crisenchou/ai]
+非laravel版本,[点击这里](https://github.com/crisenchou/ai)
 
 ### 配置
 
