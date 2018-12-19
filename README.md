@@ -26,6 +26,7 @@ app.php中
 'aliases' => [
     
     ....
+    
     'Ai' => Crisen\LaravelAi\Facades\Ai::class,
 ]
 ~~~
@@ -48,9 +49,9 @@ return [
 
     'drivers' => [
         'baidu' => [
-            'app_id' => '15027866', // 百度appid
-            'api_key' => 'yGjoCu5KGIssc9l0lbSI25FO', // 百度apikey
-            'secret_key' => 'ZPOnxKD9hQ74qPl2rmyp4aBlxEf6lwaB' // 百度secret key
+            'app_id' => 'your appid', // 百度appid
+            'api_key' => 'your api key', // 百度apikey
+            'secret_key' => 'your api secret' // 百度secret key
         ],
     ]
 ];
