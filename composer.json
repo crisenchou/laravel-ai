@@ -26,6 +26,5 @@
             "Crisen\\LaravelAi\\": "src/",
             "Crisen\\LaravelAi\\Tests\\": "tests/"
         }
-    },
-    "minimum-stability": "dev-master"
+    }
 }
