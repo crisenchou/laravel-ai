@@ -9,7 +9,7 @@ composer require "crisen/laravel-ai":"dev-master"
 
 
 
-### 注册服务提供者
+### 配置
 
 app.php中
 
@@ -72,7 +72,7 @@ class SomeController{
 	public function facesetAdd(){
 		//人脸检索
 		$res = Ai::face()
-		        ->url("jttp://domaon.com/someimgae.jpeg")
+		        ->url("http://domaon.com/someimgae.jpeg")
 		        ->detect();
 		 dd($res);
 	}
@@ -90,8 +90,7 @@ class SomeController{
 ## 支持的驱动
 
 - 百度AI
-- 腾讯优图 (1.0版本给予支持)
-- face++ (1.0版本给予支持)
+- 腾讯ai(即将到来)
 
 
 
