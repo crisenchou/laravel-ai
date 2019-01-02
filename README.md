@@ -4,7 +4,7 @@
 ## 安装
 
 ~~~
-composer require "crisen/laravel-ai":"dev-master"
+composer require "crisen/laravel-ai":"^1.0.0"
 ~~~
 
 非laravel版本,[点击这里](https://github.com/crisenchou/ai)
@@ -55,8 +55,8 @@ return [
             'secret_key' => 'your api secret' // 百度secret key
         ],
         'tencent' => [
-       	 	'app_id' => 'your appid',
-       		 'app_key' => 'your secret id',
+       	 	'app_id' => 'your appid', // 腾讯appid
+       		 'app_key' => 'your secret id', // 腾讯appid
     	]
     ]
 ];
@@ -90,8 +90,6 @@ class SomeController{
 ## 更多使用方法
 
 - [详细文档](http://doc.crisen.org/laravel-ai)
-
-
 
 ## 支持的驱动
 
