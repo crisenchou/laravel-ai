@@ -15,6 +15,7 @@ app.php中
 
 ~~~
 
+//注册服务提供者
 'providers' => [
     
     .....
@@ -23,6 +24,7 @@ app.php中
     
 ];
 
+// 注册facades
 'aliases' => [
     
     ....
@@ -46,20 +48,23 @@ return [
     
     'default' => 'baidu',
 
-
     'drivers' => [
         'baidu' => [
             'app_id' => 'your appid', // 百度appid
             'api_key' => 'your api key', // 百度apikey
             'secret_key' => 'your api secret' // 百度secret key
         ],
+        'tencent' => [
+       	 	'app_id' => 'your appid',
+       		 'app_key' => 'your secret id',
+    	]
     ]
 ];
 ~~~
 
 
 
-### 使用介绍
+### 使用简介
 
 ~~~php+HTML
 namespace someNameSpace;
@@ -84,16 +89,14 @@ class SomeController{
 
 ## 更多使用方法
 
-- [详细文档](http://doc.crisen.org/ai)
+- [详细文档](http://doc.crisen.org/laravel-ai)
 
 
 
 ## 支持的驱动
 
 - 百度AI
-- 腾讯ai(即将到来)
-
-
+- 腾讯AI
 
 ## LICENSE
 
