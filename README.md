@@ -89,7 +89,7 @@ class SomeController{
 
 ## 更多使用方法
 
-- [详细文档](http://doc.crisen.org/laravel-ai)
+- [详细文档](http://ai.crisen.org)
 
 ## 支持的驱动
 
